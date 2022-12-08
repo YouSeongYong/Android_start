@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="이름"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imgContact"
+        app:layout_constraintTop_toTopOf="@+id/imgContact" />
+
+    <TextView
+        android:id="@+id/tvContactAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="나이"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContactName"
+        app:layout_constraintStart_toEndOf="@+id/tvContactName"
+        app:layout_constraintTop_toTopOf="@+id/tvContactName" />
+
+    <TextView
+        android:id="@+id/tvContactTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="010-0000-0000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgContact"
+        app:layout_constraintStart_toEndOf="@+id/imgContact"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactName" />
+
+    <Button
+        android:id="@+id/btnContactCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="전화걸기"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContactAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvContactAge"
+        app:layout_constraintTop_toTopOf="@+id/tvContactAge" />
+</androidx.constraintlayout.widget.ConstraintLayout>
