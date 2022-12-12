@@ -26,7 +26,7 @@ class BoardAdapter(var context: Context, var boardList : ArrayList<BoardVO>)
     fun setOnItemClickListener(onItemClickListener: OnItemClickListener){
         mOnItemClickListener=onItemClickListener
     }
-
+//안녕
         inner class ViewHolder(itemView : View):RecyclerView.ViewHolder(itemView){
             val tvRvTitle : TextView
             val tvRvContent : TextView
